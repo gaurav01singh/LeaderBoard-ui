@@ -20,7 +20,6 @@ A responsive and stylish leaderboard built with **React** and **CSS**, showcasin
 ## 📁 Folder Structure
 
 ```
-react-leaderboard/
 ├── public/
 │   └── index.html
 ├── src/
@@ -57,9 +56,7 @@ react-leaderboard/
    npm start
    ```
 
-## 📷 Preview
 
-<img src="https://i.imgur.com/MOCK_SCREENSHOT.png" alt="Leaderboard Preview" width="800"/>
 
 ## ✨ Customization
 

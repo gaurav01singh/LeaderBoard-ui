@@ -18,7 +18,7 @@ const Leaderboard = () => {
     // State to hold user data and pagination
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
-  const rowsPerPage = 10;
+  const rowsPerPage = 20;
 
   useEffect(() => {
     const data = generateUsers();

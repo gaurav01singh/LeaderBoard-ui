@@ -20,7 +20,6 @@ A responsive and stylish leaderboard built with **React** and **CSS**, showcasin
 ## 📁 Folder Structure
 
 ```
-react-leaderboard/
 ├── public/
 │   └── index.html
 ├── src/

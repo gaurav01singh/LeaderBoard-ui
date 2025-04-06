@@ -1,0 +1,66 @@
+.top-three {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .top-card {
+    background: linear-gradient(to bottom, #fff, #f0f0f0);
+    border-radius: 12px;
+    text-align: center;
+    padding: 1rem;
+    width: 130px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
+  
+  .top-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .badge {
+    background-color: gold;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  
+  /* Special styling for each rank */
+  .rank-1 {
+    transform: translateY(-20px);
+    z-index: 2;
+    background: linear-gradient(to bottom, #fff5cc, #ffde59);
+  }
+  
+  .rank-2 {
+    background: linear-gradient(to bottom, #e0e0e0, #bfbfbf);
+  }
+  
+  .rank-3 {
+    background: linear-gradient(to bottom, #ffe6cc, #ffa94d);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .top-three {
+        
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  
+    .top-card {
+      width: 80%;
+    }
+  }
+  

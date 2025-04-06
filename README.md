@@ -57,9 +57,7 @@ react-leaderboard/
    npm start
    ```
 
-## 📷 Preview
 
-<img src="https://i.imgur.com/MOCK_SCREENSHOT.png" alt="Leaderboard Preview" width="800"/>
 
 ## ✨ Customization
 

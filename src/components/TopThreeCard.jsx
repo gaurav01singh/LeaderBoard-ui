@@ -1,3 +1,4 @@
+// This component displays the top three users in a leaderboard format.
 import React from 'react';
 import '../styles/TopThreeCard.css';
 

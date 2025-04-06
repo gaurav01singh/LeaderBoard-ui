@@ -3,6 +3,7 @@ import TopThreeCard from './TopThreeCard';
 import '../styles/Leaderboard.css';
 
 const generateUsers = () => {
+  // Generate random user data for demonstration purposes
   const users = Array.from({ length: 100 }, (_, i) => ({
     name: `User ${i + 1}`,
     points: Math.floor(Math.random() * 1000),
@@ -14,6 +15,7 @@ const generateUsers = () => {
 };
 
 const Leaderboard = () => {
+    // State to hold user data and pagination
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
   const rowsPerPage = 10;
@@ -25,10 +27,11 @@ const Leaderboard = () => {
 
   const topThree = users.slice(0, 3);
   const restUsers = users.slice(3);
-  const totalPages = Math.ceil(restUsers.length / rowsPerPage);
-  const visibleUsers = restUsers.slice((page - 1) * rowsPerPage, page * rowsPerPage);
+  const totalPages = Math.ceil(restUsers.length / rowsPerPage);// Calculate total pages based on remaining users
+  const visibleUsers = restUsers.slice((page - 1) * rowsPerPage, page * rowsPerPage);// Get users for the current page
 
-  const handlePageChange = (direction) => {
+  const handlePageChange = (direction) => {// direction can be -1 (prev) or 1 (next)
+    // Update the page state based on the direction
     setPage((prev) => Math.max(1, Math.min(prev + direction, totalPages)));
   };
 
